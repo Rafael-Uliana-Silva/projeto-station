@@ -1,0 +1,198 @@
+h1, h2, p, a {
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 1220px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: flex-start
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.branco {
+  color: #212121;
+  background-color: #FFFFFF;
+}
+
+.escuro {
+  color: #FFFFFF;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 7px 1px #fff;
+}
+
+.btn.escuro:hover {
+  box-shadow: 0px 0px 7px 1px #212121;
+}
+
+.intro-bg {
+  background-image: url(../img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 30px;
+  max-width: 100%;
+  color: #fff;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.logo {
+  padding-bottom: 270px;
+}
+
+.call {
+  padding-bottom: 130px;
+}
+
+.call h1 {
+  margin-bottom: 50px;
+  max-width: 570px;
+}
+
+/* Section 1 */
+
+.sect-1 {
+  padding: 70px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sect-1 h1 {
+  color: #212121;
+  max-width: 625px;
+  margin-bottom: 30px;
+}
+
+span {
+  background: #212121;
+  color: #fff;
+  padding: 0 5px;
+}
+
+/* Section 2 */ 
+
+.sect-2 {
+  width: 100%;
+  background-color: #212121;
+  padding: 70px 0;
+}
+
+.filter {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  font-family: Montserrat;
+  border: 0px #fff;
+  outline: none;
+}
+
+.filter-bar {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.filter-bar button {
+  background: #C6C4C4;
+  transition: 0.3s;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.filter-bar button:hover {
+  background: #b4b4b4;
+  cursor: pointer;
+}
+
+/* GRID DE CARDS */
+
+.card-grid {
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-height: 875px;
+  overflow-y: scroll;
+}
+
+.card-grid::-webkit-scrollbar {
+  width: 3px;
+}
+
+.card-grid::-webkit-scrollbar-track {
+  background: none;
+}
+
+.card-grid::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+}
+
+.card-grid::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.card {
+  border-radius: 25px;
+  text-align: center;
+  background-color: #D9D9D9;
+  padding: 0px 0px 70px 0px;
+  margin-bottom: 70px;
+  max-width: 300px;
+}
+
+.card h2 {
+  margin: 15px 0;
+}
+
+.card p {
+  color: #6F6F6F;
+  font-size: 12px;
+}
+
+.card p::after {
+  content: "";
+  display: block;
+  background-color: #212121;
+  width: 220px;
+  height: 2px;
+  margin: 30px auto 40px auto;
+}
