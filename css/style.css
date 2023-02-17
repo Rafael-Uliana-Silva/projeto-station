@@ -28,7 +28,7 @@ img {
 .container {
   display: flex;
   max-width: 1220px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
   align-items: flex-start
 }
@@ -260,23 +260,28 @@ margin: 15px 0;
   margin: 30px;
 }
 
-.formbg {
-  background: url(../img/bg-preto.png);
-  background-repeat: no-repeat;
-  background-origin: border-box;
-}
-
 .sect-5 .container{
-  flex-direction: column;
-  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
 }
 
-.sect-5 label{
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 30px;
+}
+
+.form label{
   font-family: Montserrat;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-.sect-5 input, textarea {
+.form input, textarea {
   width: 500px;
   resize: vertical;
   outline: none;
@@ -284,11 +289,14 @@ margin: 15px 0;
   border-radius: 10px;
   font-family: Montserrat;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
-.sect-5 textarea {
-  height: 200px;
+.form textarea {
+  min-height: 150px;
 }
+
+/* Footer */
 
 .footer {
   background: #212121;
