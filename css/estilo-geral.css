@@ -1,0 +1,310 @@
+h1, h2, p, a, li {
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+  color: #6F6F6F;
+
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 1220px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  align-items: flex-start
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.branco {
+  color: #212121;
+  background-color: #FFFFFF;
+}
+
+.escuro {
+  color: #FFFFFF;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 7px 1px #fff;
+}
+
+.btn.escuro:hover {
+  box-shadow: 0px 0px 7px 1px #212121;
+}
+
+.intro-bg {
+  background-image: url(../img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 30px;
+  max-width: 100%;
+  color: #fff;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.logo {
+  padding-bottom: 270px;
+}
+
+.call {
+  padding-bottom: 130px;
+}
+
+.call h1 {
+  margin-bottom: 50px;
+  max-width: 570px;
+}
+
+/* Section 1 */
+
+.sect-1 {
+  padding: 70px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sect-1 h1 {
+  color: #212121;
+  max-width: 625px;
+  margin-bottom: 30px;
+}
+
+span {
+  background: #212121;
+  color: #fff;
+  padding: 0 5px;
+}
+
+/* Section 2 */ 
+
+.sect-2 {
+  width: 100%;
+  background-color: #212121;
+  padding: 70px 0;
+}
+
+.filter {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  font-family: Montserrat;
+  border: 0px #fff;
+  outline: none;
+}
+
+.filter-bar {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.filter-bar button {
+  background: #C6C4C4;
+  transition: 0.3s;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.filter-bar button:hover {
+  background: #b4b4b4;
+  cursor: pointer;
+}
+
+/* GRID DE CARDS */
+
+.card-grid {
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-height: 875px;
+  overflow-y: scroll;
+}
+
+.card-grid::-webkit-scrollbar {
+  width: 3px;
+}
+
+.card-grid::-webkit-scrollbar-track {
+  background: none;
+}
+
+.card-grid::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+}
+
+.card-grid::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.card {
+  border-radius: 25px;
+  text-align: center;
+  background-color: #D9D9D9;
+  padding: 0px 0px 70px 0px;
+  margin-bottom: 70px;
+  max-width: 300px;
+}
+
+.card h2 {
+  margin: 15px 0;
+}
+
+.card p::after {
+  content: "";
+  display: block;
+  background-color: #212121;
+  width: 220px;
+  height: 2px;
+  margin: 30px auto 40px auto;
+}
+
+/* Section 3 */
+
+.sect-3 {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.sect-3 .container {
+  justify-content: space-between;
+}
+
+.sect-3 h1 {
+  color: #212121;
+  margin: 0 auto 70px auto;
+}
+
+.sect-3 p {
+  max-width: 240px;
+}
+
+.sect-3 h2 {
+margin: 15px 0;
+}
+
+/* Section 4 */
+
+.sect-4 {
+  padding: 70px 0;
+  background-color: #212121;  
+  text-align: center;
+}
+
+.sect-4 .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect-4 :nth-child(2) {
+  margin: 30px 0;
+}
+
+.sect-4 p {
+  color: #fff;
+  max-width: 490px;
+}
+
+.sect-4 .btn {
+  margin: 30px 0;
+}
+
+/* Section 5 */
+
+.sect-5 {
+  padding: 40px 0;
+}
+
+.sect-5 h1 {
+  color: #212121;
+  text-align: center;
+  margin: 30px;
+}
+
+.sect-5 .container{
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 30px;
+}
+
+.form label{
+  font-family: Montserrat;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form input, textarea {
+  width: 500px;
+  resize: vertical;
+  outline: none;
+  border: 2px #212121 solid;
+  border-radius: 10px;
+  font-family: Montserrat;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.form textarea {
+  min-height: 150px;
+}
+
+/* Footer */
+
+.footer {
+  background: #212121;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 18px;
+  color: #fff;
+}

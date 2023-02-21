@@ -1,0 +1,87 @@
+/* Header */
+
+[data-header="header"] {
+  padding: 25px 0;
+  border-bottom: #212121 2px solid;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  transition: .3s;
+}
+
+[data-header="header"] .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-header="header"] a{
+  color: #212121;
+  transition: 0.2s;
+}
+
+[data-header="header"] h2 a:hover {
+ text-shadow: 1px 1px 3px #3e3e3e;
+}
+
+[data-header="header"] ul {
+  display: flex;
+  align-items: center;
+}
+
+[data-header="header"] ul li {
+  display: flex;
+}
+
+[data-header="header"] ul li:hover {
+  text-shadow: 1px 1px 3px #3e3e3e;
+ }
+
+[data-header="header"] ul li::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+[data-header="header"] ul li:not(:last-child) {
+  margin-right: 70px;
+}
+
+[data-header="header"] ul li:nth-child(1)::after {
+  background: url(../img/icon_mensagem.svg);
+}
+
+[data-header="header"] ul li:nth-child(2):after {
+  background: url(../img/icon_info.svg);
+}
+
+[data-header="header"] ul li:nth-child(3):after {
+  background: url(../img/icon_dinheiro.svg);
+}
+
+/* Efeito de linha abaixo */
+
+.nav-lista li {
+  position: relative;
+}
+
+.nav-lista li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #F2F0F0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-lista li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Fim do header */
+
