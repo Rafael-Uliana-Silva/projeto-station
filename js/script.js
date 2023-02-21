@@ -1,1 +1,3 @@
-console.log('teste');
+import showHeader from './modules/header.js';
+
+showHeader();
