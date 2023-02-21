@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 export default function showHeader() {
   const header = document.querySelector('[data-header="header"]');
   let valorTop = 0;
