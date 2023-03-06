@@ -1,0 +1,58 @@
+.icon path {
+  fill: transparent;
+  stroke: #212121;
+  stroke-width: 2px;
+  transition: 0.5s;
+}
+
+.icon.trem path {
+  stroke-dasharray: 189;
+  stroke-dashoffset: 0;
+}
+
+.icon.velocimetro path {
+  stroke-dasharray: 295;
+  stroke-dashoffset: 0;
+}
+
+.icon-card:hover .icon.trem path {
+animation: animar-trem 2s linear forwards;
+}
+
+.icon-card:hover .icon.velocimetro path {
+  animation: animar-velocimetro 2s linear forwards;
+  }
+
+@keyframes animar-velocimetro {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 295;
+  }
+  80% {
+    stroke-dashoffset: 590;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 590;
+    fill: #212121;
+  }
+}
+
+@keyframes animar-trem {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 189;
+  }
+  80% {
+    stroke-dashoffset: 378;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 378;
+    fill: #212121;
+  }
+}
