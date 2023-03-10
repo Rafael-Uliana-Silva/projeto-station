@@ -75,16 +75,16 @@
 			<div>
 				<h1>Estações perto de você</h1>
 				<div class="filter-bar">
-					<input type="text" name="filter" id="filter" placeholder="Pesquisar por local: bairro, cidade, etc.">
+					<input data-filter="filter-bar" type="text" name="filter" id="filter" placeholder="Pesquisar por local: bairro, cidade, etc.">
 					<button><img src="img/icon_lupa.svg" alt="lupa"></button>
 				</div>
 			</div>
 		</div>
 		<div class="card-grid">
 
-			<div class="card">
-				<img src="img/estacao1.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao1.png" alt="Estação Bom Retiro">
+				<h2 data-filter="filter">Bom Retiro</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -92,9 +92,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao2.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao2.png" alt="Estação Padre Anchieta">
+				<h2 data-filter="filter">Padre Anchieta</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -102,9 +102,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao3.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao3.png" alt="Estação Cooperlotes">
+				<h2 data-filter="filter">Cooperlotes</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -112,9 +112,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao4.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao4.png" alt="Estação Planalto">
+				<h2 data-filter="filter">Planalto</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -122,9 +122,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao5.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao5.png" alt="Estação Cascata">
+				<h2 data-filter="filter">Cascata</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -132,9 +132,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao6.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao6.png" alt="Estação Morumbi">
+				<h2 data-filter="filter">Morumbi</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -142,9 +142,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao1.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao1.png" alt="Estação Terezinha">
+				<h2 data-filter="filter">Terezinha</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -152,9 +152,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao2.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao2.png" alt="Estação João Aranha">
+				<h2 data-filter="filter">João Aranha</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -162,9 +162,9 @@
 				</a>
 			</div>
 
-			<div class="card">
-				<img src="img/estacao3.png" alt="">
-				<h2>Nome</h2>
+			<div class="card" data-filter="card">
+				<img src="img/estacao3.png" alt="Estação Alphaville">
+				<h2 data-filter="filter">Alphaville</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class="barra"></div>
 				<a href="#" class="btn escuro">
@@ -184,7 +184,7 @@
 					</svg>
 				</div>
 				<h2>Disponibilidade</h2>
-				<p>Nossa frota conta com uma disponibilidade de mais de 1.000 trens</p>
+				<p>Nossa frota conta com uma disponibilidade de mais de 1.000 trens.</p>
 			</div>
 			<div class="icon-card">
 				<div class="icon velocimetro">
@@ -193,7 +193,7 @@
 					</svg>
 				</div>
 				<h2>Velocidade</h2>
-				<p>Nossa frota conta com uma velocidade de mais de 1.000 trens</p>
+				<p>Nossa equipe e tecnologia sempre fazem os trabalhos com máxima velocidade.</p>
 			</div>
 			<div class="icon-card">
 				<div class="icon trem">
@@ -202,7 +202,7 @@
 					</svg>
 				</div>
 				<h2>Segurança</h2>
-				<p>Nossa frota conta com uma segurança de mais de 1.000 trens</p>
+				<p>Segurança para você e seus pertences.</p>
 			</div>
 		</div>
 	</section>
@@ -248,7 +248,7 @@
 	</footer>
 
 	<!-- JavaScript -->
-	<script src="main.js"></script>
+	<script type="module" src="js/script.js"></script>
 	<!-- JavaScript -->
 
 </body>

@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/modules/filter.js":
+/*!******************************!*\
+  !*** ./js/modules/filter.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ filterBar)\n/* harmony export */ });\nfunction filterBar() {\n  const valorPesquisa = document.querySelector('[data-filter=\"filter-bar\"]');\n  const bairroNome = document.querySelectorAll('[data-filter=\"card\"] h2');\n  const arrayBairro = Array.from(bairroNome);\n\n  valorPesquisa.addEventListener('input', (e) => {\n    const valor = e.target.value.toLowerCase();\n    arrayBairro.forEach((bairro) => {\n      const visivel = bairro.innerHTML.toLowerCase().includes(valor);\n      bairro.classList.toggle('esconder', !visivel);\n    });\n  });\n}\n\n\n//# sourceURL=webpack://station/./js/modules/filter.js?");
+
+/***/ }),
+
 /***/ "./js/modules/header.js":
 /*!******************************!*\
   !*** ./js/modules/header.js ***!
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ showHeader)\n/* harmony export */ });\nfunction showHeader() {\n  const header = document.querySelector('[data-header=\"header\"]');\n  let valorTop = 0;\n\n  window.addEventListener('scroll', function () {\n    const scrollTop = this.window.pageYOffset || this.documentElement.scrollTop;\n    if (scrollTop > valorTop) {\n      header.style.top = '-100px';\n    } else {\n      header.style.top = '0';\n    }\n    valorTop = scrollTop;\n  });\n}\n\n\n//# sourceURL=webpack://station/./js/modules/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ showHeader)\n/* harmony export */ });\n/* eslint-disable func-names */\nfunction showHeader() {\n  const header = document.querySelector('[data-header=\"header\"]');\n  let valorTop = 0;\n\n  window.addEventListener('scroll', function () {\n    const scrollTop = this.window.pageYOffset || this.documentElement.scrollTop;\n    if (scrollTop > valorTop) {\n      header.style.top = '-100px';\n    } else {\n      header.style.top = '0';\n    }\n    valorTop = scrollTop;\n  });\n}\n\n\n//# sourceURL=webpack://station/./js/modules/header.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/header.js */ \"./js/modules/header.js\");\n\n\n(0,_modules_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://station/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/filter.js */ \"./js/modules/filter.js\");\n/* harmony import */ var _modules_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/header.js */ \"./js/modules/header.js\");\n\n\n\n(0,_modules_filter_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_modules_header_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://station/./js/script.js?");
 
 /***/ })
 
