@@ -33,6 +33,11 @@ img {
   align-items: flex-start
 }
 
+.esconder {
+  display: none;
+}
+
+
 .btn {
   padding: 10px 15px;
   border: 3px solid #fff;
@@ -183,6 +188,7 @@ span {
   padding: 0px 0px 70px 0px;
   margin-bottom: 70px;
   max-width: 300px;
+  transition: 0.3s;
 }
 
 .card h2 {
@@ -290,6 +296,10 @@ margin: 15px 0;
   font-family: Montserrat;
   padding: 10px;
   margin-bottom: 30px;
+}
+
+.classe {
+  display: none;
 }
 
 .form textarea {
