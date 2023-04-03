@@ -319,6 +319,21 @@ margin: 15px 0;
   color: #fff;
 }
 
-/* Animação dos ícones */
+/* Digitação das informações de contato */
 
+[data-digitacao]::after {
+  content: "|";
+  margin-left: 10px;
+  opacity: 1;
+  animation: blink infinite .9s;
+}
 
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
